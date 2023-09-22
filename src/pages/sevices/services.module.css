@@ -1,0 +1,37 @@
+#service {
+  padding-top: 42px;
+}
+
+.serviceTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serviceTop h1 {
+  color: #211f54;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.984px;
+}
+
+.serviceCards {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 28px;
+  margin-top: 78px;
+}
+
+@media(max-width:1220px){
+  .serviceCards{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width:950px){
+  .serviceCards{
+    grid-template-columns: 1fr;
+  }
+}

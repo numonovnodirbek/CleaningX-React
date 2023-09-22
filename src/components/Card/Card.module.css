@@ -1,0 +1,145 @@
+.Card,
+.serviceCard  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 412px;
+}
+
+.serviceCard  {
+  border-radius: 16px;
+  border: 1px solid #eff0f6;
+  background: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(20, 20, 43, 0.04);
+  padding: 83px 38px 29px;
+  transition: .5s;
+}
+
+.serviceCard:hover{
+  transform: scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+
+
+.Card img,
+.serviceCard  img {
+  /* width: 240px; */
+  height: 240px;
+  text-align: center;
+}
+
+.Card h3,
+.serviceCard h3 {
+  color: #211f54;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 39px 0 16px;
+  line-height: 36.008px;
+}
+
+.Card p,
+.serviceCard p {
+  color: #6e7191;
+  text-align: center;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.006px; /* 142.886% */
+}
+
+/* ========Article card============ */
+
+.articleCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articleImg{
+  width: 100%;
+}
+
+.cardContent {
+  padding: 50px;
+  max-width: 536px;
+  margin-top: -55px;
+  border-radius: 24px;
+  border: 1px solid #eff0f6;
+  background: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(20, 20, 43, 0.04);
+}
+
+.cardContent h3 {
+  color: #211f54;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34.008px;
+}
+
+.cardContent p {
+  color: #6e7191;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.006px;
+  margin-top: 17px;
+}
+
+.articleDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articleDate p {
+  color: #211f54;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19.998px; /* 111.1% */
+}
+
+.articleDate span {
+  width: 50px;
+  height: 50px;
+  background: #0075ff;
+}
+
+@media(max-width:1220px){
+  .serviceCard{
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    max-width: none;
+  }
+  .serviceCard img{
+    height: 130px;
+  }
+  .serviceCard h3{
+    margin-top: 0;
+  }
+}
+
+@media(max-width:950px){
+  .serviceCard{
+    max-width: 500px;
+  }
+  .cardContent{
+    padding: 25px;
+  }
+}
+
+/* @media(max-width:740px){
+  .art
+} */
+@media(max-width:550px){
+  .serviceCard{
+    flex-direction: column;
+  }
+}
